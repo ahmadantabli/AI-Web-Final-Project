@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #080e4a
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+span{
+    color: #D63384;
+}
+.scrolled-header {
+    /*This class will be added to the header when scroll*/
+    background-color: #080e4a;
+}
+#header{
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    width: 100%;
+    transition: background-color 0.5s ease;
+}
+#header a img{
+    width: 50px;
+    height: 50px;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+nav a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.4s ease;
+}
+nav a:hover{
+    color: #D63384;
+}
+.hero{
+    background-image: url(assets/AdobeStock_613383071-1000x600.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.hero h1{
+    font-size: 35px;
+}
+.hero h1 span{
+    color:  #D63384;
+}
+.buttons{
+    display: flex;
+    margin-top: 30px;
+}
+.buttons button{
+    margin: 5px;
+    padding: 3px;
+    width: 120px;
+    height: 33px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+    transition: background 0.4s ease;
+}
+#hero-btn-1{
+    background-color: #D63384;
+    color: white;
+    border-radius: 10px 5px 5px 10px;
+}
+#hero-btn-2{
+    background-color: white;
+    color: #D63384;
+    border-radius: 5px 10px 10px 5px;
+}
+#hero-btn-1:hover{
+    color: #D63384;
+    background-color: white;
+}
+#hero-btn-2:hover{
+    color: white;
+    background-color: #D63384;
+}
+.home-footer{
+    position: absolute;
+    margin-top: 600px;
+}
+
+
+/* Learn page */
+
+#learn-hero{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(assets/1687842701236.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#learn-hero h1{
+    color: #D63384;
+    font-size: 30px;
+}
+#learn-hero p{
+    color: white;
+    font-size: 20px;
+}
+#introduction{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+#introduction h1{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+#introduction h2{
+    font-size: 30px;
+    text-decoration: underline;
+}
+.intro-info{
+    display: flex;
+    flex-direction: column;
+}
+
+#importance-ai{
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 40px;
+}
+#importance-ai li{
+    margin-top: 10px;
+}
+#importance-ai li::marker{
+    color: #D63384;
+}
+#importance-ai h1{
+    font-size: 30px;
+    text-decoration: underline;
+}
+#importance-ai h2{
+    font-size: 23px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+#how-ai-works{
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 40px;
+}
+#how-ai-works li{
+    margin-top: 10px;
+}
+#how-ai-works li::marker{
+    color: #D63384;
+}
+#how-ai-works h1{
+    font-size: 30px;
+    text-decoration: underline;
+}
+#how-ai-works h2{
+    font-size: 23px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+#ai-fields{
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+#ai-fields h1{
+    font-size: 30px;
+    text-decoration: underline;
+    margin-top: 20px;
+}
+#ai-fields h2{
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+.ai-field{
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.ai-field img{
+    width: 250px;
+    height: 150px;
+}
+.field-text{
+    display: flex;
+    flex-direction: column;
+}
+
+#ai-tools{
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 10px;
+}
+#ai-tools li::marker{
+    color: #D63384;
+}
+#ai-tools h1{
+    font-size: 30px;
+    text-decoration: underline;
+}
+#ai-tools h2{
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.ai-tool-category{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.ai-tool-category ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+/* .ai-tool-category ul li {
+    width: 33%;
+} */
+.ai-tools-wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+footer{
+    height: 30px;
+    text-align: center;
+    border-top: solid 1px #D63384;
+}
+footer p{
+    margin-top: 18px;
+}
+/* quiz page */
+
+#quiz{
+    background: linear-gradient(to left, #a34875 5%, #080e4a);
+}
+.quiz{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+#quiz-intro{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+/* Style for each question */
+.question {
+    margin-top: 50px;
+
+}
+.question p{
+    width: 500px;
+    margin-bottom: 20px;
+}
+/* Style for radio buttons and labels */
+label {
+    display: block;
+    margin-top: 10px;
+}
+.label-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/* Style for the Next button */
+#next-btn,  #restart-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #D63384;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#next-btn:hover, #restart-btn:hover {
+    color: #D63384;
+    background-color: #ffffff;
+}
+
+/* Style for feedback messages */
+.feedback {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Style for the result message */
+.result {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+}
