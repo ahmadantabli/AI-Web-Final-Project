@@ -87,7 +87,7 @@ nextButton.addEventListener('click', () => {
             showResult();
         }
 
-    }, 1500)
+    }, 1200)
 
 
 
