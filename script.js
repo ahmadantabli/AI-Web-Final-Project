@@ -64,24 +64,33 @@ nextButton.addEventListener('click', () => {
     } else {
         feedbackDiv.innerText = "❌ Incorrect."; // Show feedback if the answer is incorrect
     }
+    feedbackDiv.style.display = 'block';
 
-    // Hide the current question after the user selects an answer
-    document.getElementById(`q${currentQuestion}`).style.display = 'none';
-    currentQuestion++; // Increment the question number
 
-    // Get the next question element by ID
-    const nextQuestion = document.getElementById(`q${currentQuestion}`);
+    setTimeout(() => {
+        feedbackDiv.style.display = 'none';
+        // Hide the current question after the user selects an answer
+        document.getElementById(`q${currentQuestion}`).style.display = 'none';
+        currentQuestion++; // Increment the question number
 
-    // If there is a next question, show it
-    if (nextQuestion) {
-        nextQuestion.style.display = 'flex';
-        nextQuestion.style.justifyContent = 'center';
-        nextQuestion.style.alignItems = 'center';
-        nextQuestion.style.flexDirection = 'column';
-    } else {
-        // If no more questions, show the result
-        showResult();
-    }
+        // Get the next question element by ID
+        const nextQuestion = document.getElementById(`q${currentQuestion}`);
+
+        // If there is a next question, show it
+        if (nextQuestion) {
+            nextQuestion.style.display = 'flex';
+            nextQuestion.style.justifyContent = 'center';
+            nextQuestion.style.alignItems = 'center';
+            nextQuestion.style.flexDirection = 'column';
+        } else {
+            // If no more questions, show the result
+            showResult();
+        }
+
+    }, 1500)
+
+
+
 });
 
 // Function to calculate and display the final result
